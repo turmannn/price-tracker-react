@@ -15,7 +15,7 @@ export default function ButtonAppBar() {
     function handleLoginSubmit(data: FormData) {
         const formJson = Object.fromEntries((data).entries());
         console.log('debug', formJson)
-        apiService({url: 'auth-passport-local', method: 'POST', data: formJson})
+        apiService({url: 'api/auth-passport-local/login', method: 'POST', data: formJson})
     }
 
     return (
